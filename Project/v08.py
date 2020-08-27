@@ -16,8 +16,6 @@ LED = 16
 BUZZER = 26
 MOTOR = 19
 
-angle = 2.5
-
 GPIO.setup(Ultra_TRGI, GPIO.OUT)
 GPIO.setup(Ultra_ECHO, GPIO.IN)
 GPIO.setup(BUZZER, GPIO.OUT)
@@ -30,7 +28,7 @@ time.sleep(0.1)
 
 # varible set
 p = GPIO.PWM(BUZZER,100)
-Frq = [300, 0]
+Frq = [300]
 buzzer_speed = 0.5
 
 servo = GPIO.PWM(MOTOR, 50)
@@ -92,11 +90,9 @@ except KeyboardInterrupt:
 
 #Web Server Button function
 def servo_turnL():
-    angle = angle + 1
-    servo.ChangeDutyCycle(angle)
+    servo.ChangeDutyCycle(3.5)
     time.sleep(0.5)
     
 def servo_turnR():
-    angle = angle - 1
-    servo.ChangeDutyCycle(angle)
+    servo.ChangeDutyCycle(1.5)
     time.sleep(0.5)
