@@ -10,7 +10,7 @@ Robotic Software using RaspberryPi 4 with Python
 
 ### Forder : Example - example file using Raspberry Sensor with Python (RPi.GPIO)
 
-### Forder : Project - containing FinalProject Demo version
+### Forder : TestProject - containing FinalProject Demo version
 
 ### Forder : FinalProject - containing Final Project File
 
