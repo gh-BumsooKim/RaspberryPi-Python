@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HOME NETWORK</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+    <div class="container">
+        <div class="header">
+            <h2>HOME IoT</h2>
+        </div>
+        <div class="main">
+            <div>
+                <button onclick="servo_turnL()"> L </button>
+            </div>
+            <div>
+                <button onclick="servo_turnR()"> R </button>
+            </div>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        function servo_turnL(){
+            fetch("/turn/left")
+            .then(response=> { console.log(response); return response.text()})
+            .then(data=> {
+                console.log(data);
+                let result = document.querySelector("#result");
+                if(data=="ok"){
+                    result.innerHTML = "<h2> turn left </h2>";
+                    }
+                else{ result.innerHTML = "<h2> error </h2>";}
+                    });
+        }
+        
+        function servo_turnR(){
+            fetch("/turn/right")
+            .then(response=> response.text())
+            .then(data=> {
+                console.log(data);
+                let result = document.querySelector("#result");
+                if(data=="ok"){  
+                    result.innerHTML = "<h2> turn right </h2>";
+                }else{
+                    result.innerHTML = "<h2> error </h2>";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
