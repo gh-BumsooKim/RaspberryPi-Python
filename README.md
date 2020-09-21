@@ -2,7 +2,7 @@
 
 Robotic Software using RaspberryPi 4 with Python
 
-### Topic : Magic Cloack
+### Topic : Masking을 활용한 투명망토의 구현과 Iot 대응 환경 개발
 
 
 ---
