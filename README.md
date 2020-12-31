@@ -1,4 +1,4 @@
-# RaspberryPi-Python
+# RobotSC-Ai-Project
 
 Robotic Software using RaspberryPi 4 with Python
 
