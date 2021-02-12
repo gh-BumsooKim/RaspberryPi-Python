@@ -20,7 +20,7 @@ Robotic Ai Project in **Korea Association of Robot industry [(KAR)](http://www.k
 
 ### Invisibility Cloak with OpenCV and Ultrasonic Transducer
 
-Invisibility Cloak with OpenCV. If you want to do something secretly, wear this cloak. But everyone should wear glasses made with our program using OpenCV. Even so, if someone has a detector built with a Raspberry Pi and Ultrasonic sensor, you'll be caught in no time with a loud buzzer sound. The detector can be controlled through a Flask-based web browser interface created in HTML & CSS. If you're computer engineer, try controlling the detector by intercepting the signals that communicate in the middle.
+Invisibility Cloak with OpenCV. If you want to do something secretly, wear this cloak. But everyone should wear glasses made with our program using OpenCV. Even so, if someone has a detector built with a Raspberry Pi and Ultrasonic sensor, you'll be caught in no time with a loud buzzer sound and detect of indication on L2C LCD. The detector can be controlled through a Flask-based web browser interface created in HTML & CSS. If you're computer engineer, try controlling the detector by intercepting the signals that communicate in the middle.
 
 This program is based on Raspberry Pi 4, and the sensor is controlled by python.
 
