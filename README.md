@@ -42,6 +42,12 @@ _openCV.py is Final Project Flie with "static(Forder)" , "template(Forder)"
 
 <br>
 
+## Mask with OpenCV
+
+<p align="center">
+<img src="imgs/OpenCV_Mask.jpg" width=50%>
+</p>
+
 ## Reference
 
 <p align="center">
